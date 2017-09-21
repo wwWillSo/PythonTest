@@ -13,9 +13,13 @@ class Student(object) :
         print('%s : %s' % (self.name, self.score))
     def print_grade(self):
         if self.score >= 90 :
-            return '优'
+            print('优')
         else :
-            return '良'
+            print('良')
+    def set_name(self, name):
+        self.name = name
+    def set_score(self, score):
+        self.score = score
 
 bart = Student('Bart Thompson', 90)
 print(bart.name)
